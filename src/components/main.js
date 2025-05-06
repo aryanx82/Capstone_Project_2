@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import Course from './course';
 import Search from './search'
 
 export default function Main() {
@@ -11,11 +12,11 @@ export default function Main() {
         let url = '';
     
         if (content === 'Coursera') {
-          url = 'https://jsonplaceholder.typicode.com/posts/1';
+          url = 'https://jsonplaceholder.typicode.com/posts/1';        //test API
         } else if (content === 'Udemy') {
-          url = 'https://jsonplaceholder.typicode.com/posts/2';
+          url = 'https://jsonplaceholder.typicode.com/posts/2';        //test API
         } else if (content === 'Edx') {
-          url = 'https://jsonplaceholder.typicode.com/posts/3';
+          url = 'https://jsonplaceholder.typicode.com/posts/3';        //test API
         }
 
         if (url) {
@@ -32,16 +33,17 @@ export default function Main() {
     <>
         <div className='main'>
             <div className='buttons'>
-            <button className='box' onClick={() => setContent('Coursera')} >Coursera</button>
+            <button className='box button' onClick={() => setContent('Coursera')} >Coursera</button>
             <div className='part' style={{width: 1.38, height: 85.99}}></div>
-            <button className='box' onClick={() => setContent('Udemy')}>Udemy</button>
+            <button className='box button' onClick={() => setContent('Udemy')}>Udemy</button>
             <div className='part' style={{width: 1.38, height: 85.99}}></div>
-            <button className='box' onClick={() => setContent('Edx')}>EDX</button>
+            <button className='box button' onClick={() => setContent('Edx')}>EDX</button>
             <div className='part' style={{width: 1.38, height: 85.99}}></div>
-            <button className='box' onClick={()=>setContent('Bookmark')}>Bookmark</button>
+            <button className='box button' onClick={()=>setContent('Bookmark')}>Bookmark</button>
             </div>
             <Search/>
-        {data ? (
+
+            {data ? (
           <div className="results">
             <h3>Fetched Data:</h3>
             <pre>{JSON.stringify(data, null, 2)}</pre>

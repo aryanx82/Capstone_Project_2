@@ -3,9 +3,9 @@
   padding: 0;
 }
 .header{
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8) url('https://i.pinimg.com/736x/6c/89/88/6c898848356e5d218b62e749b0bb99e5.jpg');
   width: 100vw;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-family: Itim;
   font-size: 64px;
@@ -14,15 +14,18 @@
   border-bottom: 2px solid rgb(0,0,0,);
 }
 .main{
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7) url('https://i.pinimg.com/736x/32/4e/ff/324eff79acfb1b84fc10657f26a3f917.jpg');
   height: 85vh;
   color: rgba(255, 255, 255, 0.8);
 }
 .buttons{
   display: flex;
 }
+.button:hover{
+  background-color: rgb(32, 30, 30);
+}
 .box{
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
   width: 25vw;
   height: 5vw;
   color: rgba(255, 255, 255, 0.7);
@@ -42,8 +45,19 @@
   width: 16vw;
   height: 10px;
   padding: 20px;
+  font-size: 16px;
   border-radius: 50px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.7);
   margin: 30px 40vw;
   color: rgba(255, 255, 255, 0.7);
+}
+.course{
+  width: 400px;
+  height: 300px;
+  background-color: rgb(29, 28, 28);
+  margin: 20px 70px;
+  border-radius: 16px;
+}
+.course:hover{
+  background-color: rgb(58, 56, 56);
 }
